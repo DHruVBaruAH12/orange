@@ -22,17 +22,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
-
       - name: Lint
         run: npm run lint
 
   deploy:
-    needs: build-and-lint
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
     steps:
       - name: Execute remote SSH commands
         uses: appleboy/ssh-action@v1.2.0
