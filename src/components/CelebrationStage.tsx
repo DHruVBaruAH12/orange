@@ -6,17 +6,17 @@ import SlideShow from "./SlideShow";
 
 export function CelebrationStage() {
   return (
-    <div className='h-screen snap-y snap-mandatory overflow-y-auto relative bg-pink-200'>
-      {/* Background Canvas - Fixed Position */}
-      <div className='fixed inset-0 -z-1'>
-        <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
+    <div className='h-dvh max-w-dvw snap-y snap-mandatory overflow-y-scroll relative bg-pink-200'>
+      <div className='fixed w-dvw h-dvh inset-0 -z-1'>
+        <Canvas camera={{ position: [0, 0, 0], fov: 50 }}>
           <ambientLight intensity={0.1} />
           <Particles />
         </Canvas>
       </div>
+      {/* Background Canvas - Fixed Position */}
 
-      <Header />
       <LoveMessages />
+      <Header />
       <SlideShow />
     </div>
   );

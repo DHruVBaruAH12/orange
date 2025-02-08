@@ -15,26 +15,26 @@ function LoveMessages() {
   });
 
   return (
-    <div className='h-dvh snap-start bg-[##f28bb7]/30 flex flex-col items-center justify-center relative'>
+    <div className='h-dvh outline outline-red-500 snap-start bg-[##f28bb7]/30 flex flex-col items-center justify-center relative'>
       <img
         src='/image/designCloud.svg'
         alt='cloud decoration'
-        className='absolute -top-4 scale-x-[-1] right-0 w-48 h-48 rotate-180'
+        className='absolute -top-4 scale-x-[-1] right-0 w-40 h-40 rotate-180'
       />
       <img
         src='/image/designCloud.svg'
         alt='cloud decoration'
-        className='absolute -top-4 left-0 w-48 h-48 rotate-180'
-      />
-      <img
-        src='/image/designCloud.svg'
-        alt='cloud decoration'
-        className='absolute -bottom-4 -right-6 w-40 h-40 rotate-270'
+        className='absolute -top-4 left-0 w-40 h-40 rotate-180'
       />
       <img
         src='/image/rb-cloud.svg'
         alt='cloud decoration'
-        className='absolute scale-x-[-1] -bottom-4 -left-6 w-40 h-40 rotate-270'
+        className='absolute -bottom-3 right-0 w-40 h-40 rotate-270'
+      />
+      <img
+        src='/image/rb-cloud.svg'
+        alt='cloud decoration'
+        className='absolute scale-x-[-1] -bottom-3 left-0 w-40 h-40 rotate-270'
       />
       <nav className='flex absolute top-0 left-0 w-full items-center justify-between gap-6'>
         <img

@@ -2,9 +2,9 @@ import { Heart } from "lucide-react";
 
 function Header() {
   return (
-    <div className='h-screen snap-start backdrop-blur-sm flex flex-col items-center justify-center'>
-      <header className='text-center'>
-        <h1 className='text-8xl md:text-8xl font-bold flex flex-col gap-8 md:gap-8 items-center text-rose-800 mb-2 font-montez'>
+    <div className='outline outline-red-500 h-dvh max-w-dvw snap-start backdrop-blur-sm flex flex-col items-center justify-center overflow-hidden'>
+      <header className='text-center px-4 w-full'>
+        <h1 className='text-5xl md:text-8xl font-bold flex flex-col gap-5 md:gap-8 items-center text-rose-800 mb-2 font-montez overflow-hidden'>
           I love you{" "}
           <span className='inline-block animate-[scale_2s_ease-in-out_infinite] delay-1000'>
             💖
