@@ -26,7 +26,13 @@ jobs:
         run: npm run lint
 
   deploy:
+    needs: build-and-lint
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
     steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
       - name: Execute remote SSH commands
         uses: appleboy/ssh-action@v1.2.0
         with:
