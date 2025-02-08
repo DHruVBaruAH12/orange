@@ -4,7 +4,7 @@ import { CelebrationStage } from './components/CelebrationStage';
 import { ProposalStage } from './components/ProposalStage';
 
 function App() {
-  const [accepted, setAccepted] = useState(true);
+  const [accepted, setAccepted] = useState(false);
 
   if (!accepted) {
     return <ProposalStage onAccept={() => setAccepted(true)} />;
