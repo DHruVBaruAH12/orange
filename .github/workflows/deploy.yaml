@@ -47,8 +47,8 @@ jobs:
             npm ci || exit 1
             npm run build || exit 1
             # Remove previous build files from Nginx directory
-            sudo rm -rf /var/www/vhost/frontend/* || exit 1
+            sudo rm -rf /var/www/vhosts/frontend/* || exit 1
             # Copy new build files to Nginx serving directory
-            sudo cp -R dist/ /var/www/vhost/frontend/ || exit 1
+            sudo cp -R dist/ /var/www/vhosts/frontend/ || exit 1
             # Restart Nginx to ensure changes are applied
             sudo systemctl restart nginx || exit 1
