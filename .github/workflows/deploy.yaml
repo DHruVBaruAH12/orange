@@ -49,6 +49,6 @@ jobs:
             # Remove previous build files from Nginx directory
             sudo rm -rf /var/www/vhost/frontend/* || exit 1
             # Copy new build files to Nginx serving directory
-            sudo cp -r dist/* /var/www/vhost/frontend/ || exit 1
+            sudo cp -R dist/ /var/www/vhost/frontend/ || exit 1
             # Restart Nginx to ensure changes are applied
             sudo systemctl restart nginx || exit 1
